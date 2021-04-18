@@ -2,6 +2,8 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter  } from 'react-router-dom';
 
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+
 import './App.css';
 import Header from './Header';
 import Home from './Home';
@@ -11,6 +13,9 @@ import { IconButton} from '@material-ui/core';
 import  styled  from 'styled-components';
 import unsplash from './unsplash';
 import HelpIcon from '@material-ui/icons/Help';
+
+
+
 
 
 
@@ -86,17 +91,17 @@ function App() {
       
       
       
+      
       <div clasName="add">
-        <Add >
+        <Add clasName="add">
           
 
-            <IconButton >
-                    <AddIcon  />
+            <IconButton clasName="add">
+                    <AddIcon clasName="add" />
 
             </IconButton>
              </Add>
-          </div>
-
+          
            
             <Ques>
             <IconButton className="Ques">
@@ -105,7 +110,13 @@ function App() {
             </IconButton>
 
             </Ques>
+            </div>
+
             <Home pins={pins}/>
+            
+
+            
+            
             
         
         
@@ -116,31 +127,98 @@ function App() {
   );
 }
 
+
 export default App;
+
 const Add = styled.div`
 .MuiSvgIcon-root {
     color: black;
     font-size:33px;
+    margin-top: 32%;
+    margin-left: 94%;
+    position: fixed;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px black;
+    padding:10px;
+    position:fixed;
+    cursor:pointer;
+    :hover{
+      background-color: gray;
+      
+    }
+    @media (min-width: 100px) and (max-width: 548px) {
+      margin-left:90%;
+      margin-top:85%;
+      font-size:23px;
     
-   
+  
+      
+      
+    }
+    
+    @media (min-width: 100px) and (max-width: 290px) {
+      margin-left:-10%;
+      margin-top:78%;
+      font-size:23px;
     
 
-    
-    
+      
+      
+    }
 
     
 }
+
+
+
+
+
+
 
 `
 const Ques = styled.div`
 .MuiSvgIcon-root {
   color: black;
   font-size:33px;
+  margin-top: 35%;
+  padding:10px;
+  
+  margin-left: 94%;
+  background-color: white;
+  border-radius: 100%;
+  position: fixed;
+  box-shadow: 0px 0px 5px black;
+  cursor:pointer;
+  :hover{
+    background-color: gray;
+  }
+  @media (min-width: 100px) and (max-width: 548px) {
+    margin-left:90%;
+    margin-top:92%;
+    font-size:23px;
+  
+
+    
+    
+  }
+  @media (min-width: 100px) and (max-width: 290px) {
+    margin-left:50%;
+    margin-top:86%;
+    font-size:23px;
+  
+
+    
+    
+  }
+
+    
+  }
  
     
    
     
-}
+
 
 `
 
