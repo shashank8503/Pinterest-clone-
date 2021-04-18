@@ -27,6 +27,30 @@
 .App-link {
   color: #61dafb;
 }
+.dHivTc {
+  margin-top: 30%;
+  margin-left: 94%;
+  position: fixed;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 100%;
+  display: over;
+  background-color: white;
+  
+}
+.gwUjsr:hover{
+  transform: rotate(90deg);
+}
+.gswVip  {
+  margin-top: 35%;
+  
+  margin-left: 94%;
+  position: fixed;
+  border-radius: 100%;
+  box-shadow: 0px 0px 5px black;
+  background-color: white;
+
+}
+ 
 
 @keyframes App-logo-spin {
   from {

@@ -1,0 +1,27 @@
+
+
+.images{
+    display: inline-flex;
+    padding: 8px;
+
+}
+.con1{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 236px;
+    
+    
+
+
+
+
+}
+.img1{
+    display: flex;
+    width: 100%;
+    cursor: zoom-in;
+    border-radius: 16px;
+
+}
